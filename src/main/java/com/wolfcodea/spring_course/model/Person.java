@@ -34,11 +34,11 @@ public class Person implements Serializable {
 	public Person() {
 	}
 
-	public Long getId() {
+	public Long getKey() {
 		return id;
 	}
 
-	public void setId(Long id) {
+	public void setKey(Long id) {
 		this.id = id;
 	}
 
