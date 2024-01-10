@@ -1,5 +1,7 @@
 package com.wolfcodea.spring_course.model;
 
+import java.io.Serializable;
+
 import org.springframework.security.core.GrantedAuthority;
 
 import jakarta.persistence.Column;
@@ -11,7 +13,7 @@ import jakarta.persistence.GenerationType;
 
 @Entity
 @Table(name = "permission")
-public class Permission implements GrantedAuthority {
+public class Permission implements GrantedAuthority, Serializable {
 
     private static final long serialVersionUID = 1L;
 
